@@ -1,0 +1,21 @@
+body.train-booking-app {
+  margin: 0;
+  font-family: 'Gilroy-Medium';
+  font-size: $fs-primary;
+  color: $black-primary;
+  background-color: $gray-primary;
+  min-height: 100vh;
+  overflow-x: hidden !important;
+
+  .main {
+    width: 100vw;
+    max-width: 375px;
+    height: 100vh;
+    max-height: 812px;
+    background: $gray-primary;
+    padding: 72px 30px 41px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 1px solid black;
+  }
+}

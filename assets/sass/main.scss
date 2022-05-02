@@ -1,0 +1,19 @@
+// Abstracts
+@import './abstracts/variables';
+@import './abstracts/colors';
+@import './abstracts/mixins';
+
+//Base
+@import './base/fonts';
+@import './base/transitions';
+@import './base/sanitize';
+@import './base/reset';
+
+// Custom Library
+// Element UI
+@import './custom/element-ui/index.scss'; // Components
+// Pages
+// Layouts
+@import './layouts/trainbookingapp.scss';
+//Global
+@import './base/global';
