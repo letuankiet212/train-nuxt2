@@ -1,0 +1,31 @@
+.distance {
+  @include box(315px, 162px);
+
+  border-radius: 12px;
+  margin: 54px auto 22px;
+  padding: 0.5rem 1.2rem;
+  background-color: white;
+  position: relative;
+
+  &-icon {
+    @include box(53px);
+
+    background-color: $black-primary;
+    position: absolute;
+    border-radius: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 19px;
+
+    &:hover {
+      background-color: $black-primary;
+    }
+  }
+}
+
+.image-ads {
+  @include box(315px, 235px);
+
+  margin-top: 52px;
+  position: relative;
+}

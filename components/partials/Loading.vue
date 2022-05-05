@@ -4,7 +4,7 @@
   </div>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default Vue.extend({
   name: 'LoadingPage',
@@ -12,26 +12,26 @@ export default Vue.extend({
     return {
       loading: false,
       isFullScreen: true,
-    }
+    };
   },
   methods: {
     start() {
-      this.loading = true
+      this.loading = true;
 
       const hidden = () => {
-        this.isFullScreen = false
-      }
+        this.isFullScreen = false;
+      };
 
       return {
         hidden,
-      }
+      };
     },
     finish() {
-      this.loading = false
-      this.isFullScreen = true
+      this.loading = false;
+      this.isFullScreen = true;
     },
   },
-})
+});
 </script>
 
 <style lang="scss" scoped>

@@ -71,4 +71,4 @@ export default [
       'Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.',
     amount: 90,
   },
-]
+];

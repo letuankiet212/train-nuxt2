@@ -1,0 +1,14 @@
+.el-button {
+  transition: 100ms;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.85;
+  }
+
+  &--primary,
+  &--primary.is-disabled {
+    background-color: $blue-primary;
+  }
+}

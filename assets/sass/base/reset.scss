@@ -6,11 +6,13 @@
   box-shadow: none;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  &:after,
-  &:before {
+
+  &::after,
+  &::before {
     box-sizing: border-box;
   }
 }
+
 input,
 button {
   border: none;
@@ -18,6 +20,7 @@ button {
   padding: 0;
   border-radius: 0;
 }
+
 input[type='submit'],
 input[type='reset'],
 input[type='button'],
@@ -39,25 +42,31 @@ nav,
 section {
   display: block;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 a,
 abbr {
   text-decoration: none;
+
   &:hover,
   &:focus {
     text-decoration: none;
   }
 }
+
 li {
   list-style-type: none;
 }
+
 h1,
 h2,
 h3,
@@ -66,12 +75,12 @@ h5,
 h6 {
   font-weight: normal;
 }
+
 img {
   user-select: none;
   background-color: transparent;
 }
 
-//form
 fieldset {
   border: none;
   margin: 0;
@@ -81,8 +90,6 @@ fieldset {
 input,
 select,
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background-clip: border-box;
   margin: 0;
@@ -99,8 +106,6 @@ input[type='radio'] {
 }
 
 input[type='checkbox'] {
-  -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
   appearance: checkbox;
 }
 
@@ -114,28 +119,23 @@ select[multiple] {
   height: auto;
 }
 
-// remove dropdown for IE10+
 select::-ms-expand {
   display: none;
 }
 
-// remove IE11 select element selected option state
 select:focus::-ms-value {
   background-color: transparent;
   color: inherit;
 }
 
-// Allow only vertical resizing of textareas
 textarea {
   resize: vertical;
 }
 
-// remove search controls
 input[type='search']::-webkit-search-decoration {
   display: none;
 }
 
-// button
 button {
   appearance: none;
   background: none;
@@ -143,15 +143,12 @@ button {
   border-radius: 0;
 }
 
-// disabled states
 [disabled],
 [disabled] * {
   box-shadow: none;
   cursor: not-allowed;
   user-select: none;
 }
-
-//Removing input background color
 
 input:-webkit-autofill,
 textarea:-webkit-autofill,
@@ -160,6 +157,6 @@ select:-webkit-autofill {
   &:hover,
   &:focus,
   &:active {
-    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    box-shadow: 0 0 0 1000px #fff inset !important;
   }
 }

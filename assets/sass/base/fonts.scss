@@ -1,4 +1,4 @@
-$fonts:/* FONT_FACE */ 'Gilroy-Medium', 'Gilroy-Bold';
+$fonts: 'Gilroy-Medium', 'Gilroy-Bold';
 
 @each $font in $fonts {
   @if ($font != '') {

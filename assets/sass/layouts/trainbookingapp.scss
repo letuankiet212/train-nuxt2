@@ -1,6 +1,6 @@
 body.train-booking-app {
   margin: 0;
-  font-family: 'Gilroy-Medium';
+  font-family: Gilroy-Medium, sans-serif;
   font-size: $fs-primary;
   color: $black-primary;
   background-color: $gray-primary;
@@ -10,7 +10,7 @@ body.train-booking-app {
   .main {
     width: 100vw;
     max-width: 375px;
-    height: 100vh;
+    min-height: 100vh;
     max-height: 812px;
     background: $gray-primary;
     padding: 72px 30px 41px;

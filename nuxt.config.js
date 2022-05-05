@@ -1,4 +1,5 @@
-import messages from './i18n/'
+import messages from './i18n';
+
 export default {
   server: {
     port: process.env.PORT || 3000,
@@ -46,7 +47,7 @@ export default {
   plugins: ['@/plugins/element-ui'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -69,14 +70,14 @@ export default {
     locales: ['vi'],
     defaultLocale: 'vi', // language default
     detectBrowserLanguage: {
-      useCookie: true, //Help save lang when reload page
-      cookieKey: 'i18n_redirected', //string name key
+      useCookie: true, // Help save lang when reload page
+      cookieKey: 'i18n_redirected', // string name key
       onlyOnRoot: true,
-      alwaysRedirect: true, //Awaly save member choise language
+      alwaysRedirect: true, // Awaly save member choise language
     },
-    //Extension for i18n
+    // Extension for i18n
     vueI18n: {
-      fallbackLocale: 'vi', //language default
+      fallbackLocale: 'vi', // language default
       messages,
     },
   },
@@ -92,9 +93,10 @@ export default {
     transpile: [/^element-ui/],
     postcss: {
       plugins: {
+        'postcss-import': {},
         tailwindcss: {},
         autoprefixer: {},
       },
     },
   },
-}
+};

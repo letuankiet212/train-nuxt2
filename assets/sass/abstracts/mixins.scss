@@ -1,22 +1,4 @@
-/// @example placeholder { color: white}
-/// @content Dùng để thêm css cho placeholder
-
-@mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-  &:-moz-placeholder {
-    @content;
-  }
-  &::-moz-placeholder {
-    @content;
-  }
-  &:-ms-input-placeholder {
-    @content;
-  }
-}
-
-// MIN DEVICES
+/** MIN DEVICES **/
 $breakpoints: (
   280: 280px,
   321: 321px,
@@ -59,7 +41,7 @@ $breakpoints: (
   }
 }
 
-// MAX DEVICES WIDTH
+/** MAX DEVICES WIDTH **/
 $max_breakpoints: (
   1920: 1920px,
   1600: 1600px,
@@ -110,17 +92,4 @@ $max_breakpoints: (
 @mixin box($width, $height: $width, $base: 10) {
   width: $width;
   height: $height;
-}
-
-@mixin breakpoints(
-  $cssProp: 'padding',
-  $cssPropUnit: 'px',
-  $values: (),
-  $mediaQueryType: 'max-width'
-) {
-  @each $screen, $breakpoint in $values {
-    @media only screen and (max-width: #{$screen}px) {
-      #{$cssProp}: #{$breakpoint + $cssPropUnit};
-    }
-  }
 }
