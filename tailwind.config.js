@@ -13,6 +13,9 @@ module.exports = {
           // default: '#3699ff',
           1: '#a9a9a9',
         },
+        blue: {
+          default: '#3a72d6',
+        },
       },
     },
   },

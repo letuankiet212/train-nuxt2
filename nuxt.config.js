@@ -39,7 +39,6 @@ export default {
   css: [
     '~/assets/css/main.css',
     'element-ui/lib/theme-chalk/index.css',
-    '~/assets/themes/default/index.css',
     '~/assets/sass/main.scss',
   ],
 
@@ -67,8 +66,8 @@ export default {
     'nuxt-i18n',
   ],
   i18n: {
-    locales: ['vi'],
-    defaultLocale: 'vi', // language default
+    locales: ['en'],
+    defaultLocale: 'en', // language default
     detectBrowserLanguage: {
       useCookie: true, // Help save lang when reload page
       cookieKey: 'i18n_redirected', // string name key
@@ -77,7 +76,7 @@ export default {
     },
     // Extension for i18n
     vueI18n: {
-      fallbackLocale: 'vi', // language default
+      fallbackLocale: 'en', // language default
       messages,
     },
   },

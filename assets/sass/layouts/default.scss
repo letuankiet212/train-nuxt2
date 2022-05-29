@@ -4,8 +4,26 @@ body {
   margin: 0;
   font-family: $ff-primary;
   font-size: $fs-primary;
-  // color: $text-primary;
+  color: $text-base;
   background-color: $bg-color;
   min-height: 100vh;
   overflow-x: hidden !important;
+}
+
+.bg-phone {
+  @include box(372px, 750px);
+  padding: 20px 22px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: url('~/assets/images/background-phone.png') top center/contain
+      no-repeat;
+    @include box(100%);
+    pointer-events: none;
+  }
 }
