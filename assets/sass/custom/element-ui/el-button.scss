@@ -9,6 +9,13 @@
 
   &--primary,
   &--primary.is-disabled {
-    background-color: $blue-primary;
+    // background-color: $blue-primary;
+  }
+
+  &--primary,
+  &--primary:hover {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $white-base;
   }
 }

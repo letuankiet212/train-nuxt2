@@ -1,11 +1,10 @@
-<template>
-  <p>This is homepage</p>
-</template>
+<template></template>
 
 <script lang="ts">
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'HomePage',
+  name: 'LoginPage',
+  data() {},
 });
 </script>

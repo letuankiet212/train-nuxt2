@@ -1,7 +1,13 @@
 /** Figma design colors (defined by designers) **/
-$gray-primary: #f2f4f8;
-$gray-bg-icon: #e2e3e6;
-$blue-primary: #2b5ab5;
-$black-primary: #000;
+$neutrals-color: #2a2a2a;
+$secondary-color: #3a72d6;
+$primary-color: #ffc014;
+$red-base: #ff624d;
+$green-base: #79d1c7;
 
-/** Missing colors ?? (not defined by designers but exists in design) **/
+/**  Color default **/
+$white-base: #ffff;
+$black-base: black;
+
+/**  Color in layout**/
+$bg-color: $white-base;
