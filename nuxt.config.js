@@ -39,12 +39,11 @@ export default {
   css: [
     '~/assets/css/main.css',
     'element-ui/lib/theme-chalk/index.css',
-    '~/assets/themes/default/index.css',
     '~/assets/sass/main.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/element-ui'],
+  plugins: ['~/plugins/element-ui', '~/plugins/api-services.ts'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
@@ -67,8 +66,8 @@ export default {
     'nuxt-i18n',
   ],
   i18n: {
-    locales: ['vi'],
-    defaultLocale: 'vi', // language default
+    locales: ['en'],
+    defaultLocale: 'en', // language default
     detectBrowserLanguage: {
       useCookie: true, // Help save lang when reload page
       cookieKey: 'i18n_redirected', // string name key
@@ -77,7 +76,7 @@ export default {
     },
     // Extension for i18n
     vueI18n: {
-      fallbackLocale: 'vi', // language default
+      fallbackLocale: 'en', // language default
       messages,
     },
   },
@@ -85,7 +84,9 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: process.env.API_BASE_URL,
+    debug: process.env.DEBUG || false,
+    credential: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

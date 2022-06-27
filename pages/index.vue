@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div v-for="(movie, index) in moves_list" :key="'movie' + index">
-      {{ movie }}
+  <div class="bg-phone">
+    <div id="home_page" class="pt-10">
+      <div class="home__content">hello</div>
     </div>
   </div>
 </template>
@@ -10,11 +10,10 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'HomeMovie',
+  name: 'HomePage',
+
   data() {
-    return {
-      moves_list: [1, 2, 3] as Array<Number>,
-    };
+    return {};
   },
 });
 </script>
