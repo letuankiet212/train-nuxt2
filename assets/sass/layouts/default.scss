@@ -11,19 +11,26 @@ body {
 }
 
 .bg-phone {
-  @include box(372px, 750px);
-  padding: 20px 22px;
-
   position: relative;
 
+  @include devices($md) {
+    @include box(372px, 748px);
+    padding: 18px 22px;
+    margin-left: 20px;
+    overflow-y: scroll;
+  }
+
   &::before {
-    content: '';
-    left: 0;
-    top: 0;
-    position: absolute;
-    background: url('~/assets/images/background-phone.png') top center/contain
-      no-repeat;
-    @include box(100%);
-    pointer-events: none;
+    @include devices($md) {
+      content: '';
+      left: 20px;
+      top: 0;
+      position: fixed;
+      background: url('~/assets/images/background-phone.png') top center/contain
+        no-repeat;
+      @include box(372px, 750px);
+      pointer-events: none;
+      z-index: 9999;
+    }
   }
 }

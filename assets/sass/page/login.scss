@@ -3,3 +3,26 @@
     $white-base;
   padding-top: 85px;
 }
+
+#home_page {
+  @include devices($md) {
+    padding-top: 1.8rem;
+  }
+}
+
+.icon-like {
+  .list-icon {
+    display: flex;
+    visibility: hidden;
+    width: 200px;
+    opacity: 0;
+    bottom: 0rem;
+    transition: 0.5s all;
+  }
+
+  &:hover .list-icon {
+    visibility: visible;
+    opacity: 1;
+    bottom: 1.8rem;
+  }
+}

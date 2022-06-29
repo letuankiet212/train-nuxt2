@@ -1,6 +1,16 @@
 .el-button {
   transition: 100ms;
 
+  &.p-0 {
+    padding: 0;
+  }
+
+  &.font-bold {
+    i {
+      font-weight: bold;
+    }
+  }
+
   &:hover,
   &:focus,
   &:active {

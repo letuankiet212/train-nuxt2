@@ -1,4 +1,6 @@
 export default {
+  title: '',
+
   form: {
     email: 'E-mail',
     password: 'Password',
