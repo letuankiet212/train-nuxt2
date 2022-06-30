@@ -55,6 +55,7 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     '@nuxt/postcss8',
+    '@nuxt/content',
   ],
 
   styleResources: {},
@@ -64,6 +65,22 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     'nuxt-i18n',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyCpvRNXz7Qv8-MKYSkBLklxDVaCAKIOWVU',
+          authDomain: 'kietlt1-codes-blogs-dev.firebaseapp.com',
+          projectId: 'kietlt1-codes-blogs-dev',
+          storageBucket: 'kietlt1-codes-blogs-dev.appspot.com',
+          messagingSenderId: '248840495188',
+          appId: '1:248840495188:web:6d32a5a7b39b51b0bf0dc1',
+        },
+        services: {
+          firestore: true,
+        },
+      },
+    ],
   ],
   i18n: {
     locales: ['en'],
